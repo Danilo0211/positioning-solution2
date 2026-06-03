@@ -133,7 +133,9 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
   .fa-facebook {
    background: #3B5998;
    color: white;
- }
+   padding: 20px 25px;
+
+ } 
   .fa-twitter {
    background: #55ACEE;
    color: white;
@@ -155,9 +157,7 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    display: flex;
    justify-content: space-evenly;
  }
-
-
-
+ 
 
 /* end positioning styles */
 /* Responsive rules */
