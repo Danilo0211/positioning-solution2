@@ -40,7 +40,6 @@ h1.page-header{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
  }
- 
 
  main.wrapper {
     background-color: white;
@@ -50,7 +49,6 @@ h1.page-header{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
  }
- 
 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
@@ -83,8 +81,6 @@ footer {
 * {
    box-sizing: border-box;
  }
-
-
 /* Create two equal columns that floats next to each other */
 .my-column {
    float: left;
@@ -103,8 +99,6 @@ footer {
        width: 100%;
      }
 }
-
-
 Use the DOM inspector and shut off the rules to see how they work.  The last rule above is a very famous clearfix that has quite a history: The ClearFix: Force An Element to Self Clear It's Children
 
 One column mobile: We'd like our columns to show up as 100% in a phone so they are stacked one on top of the other.  Add the following CSS to your styles:
@@ -114,13 +108,6 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
        width: 100%;
      }
 }
-
-
-
-
-
-
-
 .text-align-center{
    text-align:center;
    background-color:aqua;
@@ -131,6 +118,40 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    background-color:beige;
    text-align:center;
 }
+
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+   border-radius: 50%;
+ }
+  .fa:hover {
+     opacity: 0.7;
+ }
+  .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+  .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+  .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+  .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+  .fa-snapchat-ghost {
+   background: #fffc00;
+   color: white;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
 
 
 /* end positioning styles */
