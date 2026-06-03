@@ -151,6 +151,11 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    color: white;
    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
+ .social-container {
+   display: flex;
+   justify-content: space-evenly;
+ }
+
 
 
 
