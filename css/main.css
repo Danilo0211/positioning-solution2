@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
 
-* {
-    box-sizing: border-box;
-}
-
 html {
     background-color: lightgray;
     font-family: 'Quicksand', sans-serif;
@@ -109,7 +105,7 @@ aside {
     /*height: 300px; */
     margin-top:30px;
     background:#fff; 
-    width:340px;
+    width: 340px;
     float: right;
     margin-bottom: 20px;
 }
@@ -295,9 +291,9 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
         margin-right: 2em;
     }
 
-     .aside {
+  aside {
     width: 25%;
-    float: left;
+    float: right;
   }
   
   .cards-wrapper {
@@ -336,9 +332,9 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
         margin-left: 1em;
     }
 
-     .aside {
+    aside {
     width: 25%;
-    float: left;
+    float: right;
   }
   
   .cards-wrapper {
@@ -374,9 +370,9 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
         width: 100%;
     }
 
- .aside {
+   aside {
     width: 25%;
-    float: left;
+    float: right;
   }
   
   .cards-wrapper {
