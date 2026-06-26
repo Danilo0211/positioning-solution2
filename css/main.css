@@ -2,7 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
 
-
+* {
+    box-sizing: border-box;
+}
 
 html {
     background-color: lightgray;
@@ -72,6 +74,35 @@ h2,h3 {
     line-height: 1em;
 }
 
+/* Testing stiles
+
+ Base styles 
+.aside { width: 100%; }
+.box { width: 100%; margin-bottom: 10px; }
+
+/* Desktop View (e.g., screens wider than 768px) 
+@media (min-width: 768px) {
+  .container { overflow: hidden; } /* Clearfix hack 
+  
+  .aside {
+    width: 25%;
+    float: left;
+  }
+  
+  .cards-wrapper {
+    width: 75%;
+    float: left;
+  }
+  
+  .box {
+    width: 30%; /* 3 boxes side-by-side 
+    float: left;
+    margin-right: 3%;
+  }
+}
+
+ finsihed testing media queries */
+
 
 
 aside {
@@ -134,11 +165,14 @@ footer {
    display: table;
    clear: both;
  }
-@media all and (max-width:500px) {
+
+ 
+
+/*@media all and (max-width:500px) {
    .my-column {
        width: 100%;
      }
-}
+}*/
 /*Use the DOM inspector and shut off the rules to see how they work.  The last rule above is a very famous clearfix that has quite a history: The ClearFix: Force An Element to Self Clear It's Children
 
 One column mobile: We'd like our columns to show up as 100% in a phone so they are stacked one on top of the other.  Add the following CSS to your styles:*/
@@ -210,13 +244,37 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    display: flex;
    justify-content: space-evenly;
 }
-
-
 /* flexible image rules end here */
 
- 
+/* Style the heading inside the box */
+.box h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd; /* Adds a nice line under the title */
+}
 
-/* end positioning styles */
+/* Style the paragraph inside the box */
+.box p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improves readability */
+    color: #555;
+}
+.box {
+    background-color: #ffffff;
+    padding: 20px;          /* Gives text breathing room */
+    border: 1px solid #eee; /* Light border */
+    border-radius: 10px;    /* Softens the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle depth effect */
+    transition: transform 0.3s ease; /* Smooth effect for interactions */
+}
+
+/* Cool Hover Effect: Makes the box pop when you move your mouse over it */
+.box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+/*end of box styling*/
 /* Responsive rules */
 
 /* DESKTOP */
@@ -236,13 +294,34 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
         float: left;
         margin-right: 2em;
     }
-    
+
+     .aside {
+    width: 25%;
+    float: left;
+  }
+  
+  .cards-wrapper {
+    width: 75%;
+    float: left;
+  }
+  
+  .box {
+    width: 30%; /* 3 boxes side-by-side */
+    float: left;
+    margin-right: 3%;
+  }
+
+  .cards-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;    
 }
+}       
 
 /* TABLET */
-@media all and (min-width:501px) and (max-width:1199px) {
+@media all and (min-width:501px) and (max-width:780px) {
     main.wrapper {
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
     
@@ -257,8 +336,29 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
         margin-left: 1em;
     }
 
-}
+     .aside {
+    width: 25%;
+    float: left;
+  }
+  
+  .cards-wrapper {
+    width: 75%;
+    float: left;
+  }
+  
+  .box {
+    width: 30%; /* 3 boxes side-by-side */
+    float: left;
+    margin-right: 3%;
+  }
 
+  .cards-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+}
 /* PHONE */
 @media all and (max-width:500px) {
     main.wrapper {
@@ -273,5 +373,28 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
     picture.profile img {
         width: 100%;
     }
+
+ .aside {
+    width: 25%;
+    float: left;
+  }
+  
+  .cards-wrapper {
+    width: 75%;
+    float: left;
+  }
+  
+  .box {
     
+    font-size: 0.9rem; /* Smaller text for smaller screens */
+    width: 30%; /* 3 boxes side-by-side */
+    float: left;
+    margin-right: 3%;
+  } 
+  .cards-wrapper::after {
+    content: "";
+    display: table;
+    clear: both;  
+
+}
 }
