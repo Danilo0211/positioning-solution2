@@ -162,7 +162,24 @@ footer {
    clear: both;
  }
 
- 
+ /* grid - slice images into 4 columns */
+.image-gallery {
+  display: grid;
+  /* Default: 2x2 grid for mobile/tablet */
+  grid-template-columns: repeat(2, 1fr); 
+  width: 100%; 
+  gap: 2%; /* 25% margin gap as requested */
+  padding: 20px; /* Optional: adds breathing room around the container */
+  box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: red; /* Add this temporarily */
+}
+
 
 /*@media all and (max-width:500px) {
    .my-column {
@@ -173,11 +190,11 @@ footer {
 
 One column mobile: We'd like our columns to show up as 100% in a phone so they are stacked one on top of the other.  Add the following CSS to your styles:*/
 
-@media all and (max-width:500px) {
+/*@media all and (max-width:500px) {
    .my-column {
        width: 100%;
      }
-}
+}*/
 .text-align-center{
    text-align:center;
    background-color:aqua;
@@ -312,6 +329,12 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
     display: table;
     clear: both;    
 }
+.image-gallery {
+    /* Switches to single row of 4 */
+    margin: 0 auto; /* Center the gallery */
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
  
 }       
 
@@ -355,6 +378,12 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
     clear: both;
 
 }
+.image-gallery {
+    /* Switches to single row of 4 */
+    margin: 0 auto; /* Center the gallery */
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
 }
 /* PHONE */
 @media all and (max-width:500px) {
@@ -392,6 +421,11 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
     content: "";
     display: table;
     clear: both;  
-
-}
+    }
+    .image-gallery {
+    /* Switches to single row of 4 */
+    margin: 0 auto; /* Center the gallery */
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
 }
