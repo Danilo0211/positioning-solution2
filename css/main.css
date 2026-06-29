@@ -137,11 +137,7 @@ a:hover {
     text-decoration: none;
 }
 
-footer {
-    clear: both;
-    text-align: center;
-    padding: 1em;
-}
+
 /* start posititioning styles */
 /* Allows box to take up full space, ignoring padding/margin */
 * {
@@ -151,7 +147,7 @@ footer {
 .my-column {
    float: left;
    width: 50%;
-   padding: 10px;
+   padding: 50px;
    min-height: 300px; /* Can be removed. Only for demonstration */
  }
   /* Clear floats after the columns */
@@ -243,9 +239,18 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    display: flex;
    justify-content: space-evenly;
  }
-
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
  /* flexible image rules start here */
-
+.my-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* This creates a 20px space between your columns */
+  margin: 0 20px; /* this moves the whole row away from the browser edge*/
+  }
 
 .flexible img{
    width:100%;
@@ -254,7 +259,7 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
 
 .flexible{
    display: flex;
-   justify-content: space-evenly;
+
 }
 /* flexible image rules end here */
 
