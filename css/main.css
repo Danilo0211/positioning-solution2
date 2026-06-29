@@ -305,7 +305,10 @@ footer {
         width: 79%;
         padding-left: 1%;
     }
-    
+  .my-row{
+
+    flex-direction: row;
+  }
     picture.profile img {
         width: 50%;
         float: left;
@@ -353,6 +356,9 @@ footer {
         width: 89%;
         padding-left: 1%;
     }
+    .my-row {
+      flex-direction: column;
+    }
     
     picture.profile img {
         width: 50%;
@@ -399,7 +405,9 @@ footer {
         width: 99%;
         padding-left: 1%;
     }
-    
+    .my-row{
+      flex-direction: column;
+    }
     picture.profile img {
         width: 100%;
     }
