@@ -77,6 +77,10 @@ h2,h3 {
     margin-left: 1em;
     line-height: 1em;
 }
+.text-align-center{
+   text-align:center;
+   background-color:aqua;
+}
 
 /* Testing stiles
 
@@ -146,7 +150,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 /* start posititioning styles */
 /* Allows box to take up full space, ignoring padding/margin */
 * {
@@ -159,13 +162,30 @@ a:hover {
    padding: 50px;
    min-height: 300px; /* Can be removed. Only for demonstration */
  }
+
+ /* flexible image rules start here */
+ /* belong to first two boxes */
+.my-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* This creates a 20px space between your columns */
+  margin: 0 20px; /* this moves the whole row away from the browser edge*/
+  }
+.flexible img{
+   width:100%;
+}
+.flexible{
+   display: flex;
+}
+/* end to first big boxes */
+/* flexible image rules end here */
+
   /* Clear floats after the columns */
  .my-row:after {
    content: "";
    display: table;
    clear: both;
  }
-
  /* grid - slice images into 4 columns */
 .image-gallery {
   display: grid;
@@ -199,10 +219,7 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
        width: 100%;
      }
 }*/
-.text-align-center{
-   text-align:center;
-   background-color:aqua;
-}
+
 .margin-auto > div{
    margin:auto;
    width:50%;
@@ -247,30 +264,13 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
  .social-container {
    display: flex;
    justify-content: space-evenly;
+   clear:both;
  }
 footer {
     clear: both;
     text-align: center;
     padding: 1em;
 }
- /* flexible image rules start here */
-.my-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px; /* This creates a 20px space between your columns */
-  margin: 0 20px; /* this moves the whole row away from the browser edge*/
-  }
-
-.flexible img{
-   width:100%;
-}
-
-
-.flexible{
-   display: flex;
-
-}
-/* flexible image rules end here */
 
 /* Style the heading inside the box */
 .box h3 {
