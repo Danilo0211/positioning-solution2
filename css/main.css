@@ -48,9 +48,9 @@ h1.page-header{
  #banner {
     
     height:50px;
-     background: #080;
+    background: #080;
     margin-top: 20px;
-     -webkit-border-top-left-radius: 25px;
+    -webkit-border-top-left-radius: 25px;
     -webkit-border-top-right-radius: 25px;
     -moz-border-radius-topleft: 25px;
     -moz-border-radius-topright: 25px;
@@ -204,6 +204,36 @@ a:hover {
   object-fit: cover;
   background-color: red; /* Add this temporarily */
 }
+/* Style the heading inside the box */
+.box h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd; /* Adds a nice line under the title */
+}
+
+/* Style the paragraph inside the box */
+.box p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Improves readability */
+    color: #555;
+}
+.box {
+    background-color: #ffffff;
+    padding: 20px;          /* Gives text breathing room */
+    border: 1px solid #eee; /* Light border */
+    border-radius: 10px;    /* Softens the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle depth effect */
+    transition: transform 0.3s ease; /* Smooth effect for interactions */
+}
+
+/* Cool Hover Effect: Makes the box pop when you move your mouse over it */
+.box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+/*end of box styling*/
+/* Responsive rules */
 
 
 /*@media all and (max-width:500px) {
@@ -274,36 +304,7 @@ footer {
     padding: 1em;
 }
 
-/* Style the heading inside the box */
-.box h3 {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ddd; /* Adds a nice line under the title */
-}
 
-/* Style the paragraph inside the box */
-.box p {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6; /* Improves readability */
-    color: #555;
-}
-.box {
-    background-color: #ffffff;
-    padding: 20px;          /* Gives text breathing room */
-    border: 1px solid #eee; /* Light border */
-    border-radius: 10px;    /* Softens the corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle depth effect */
-    transition: transform 0.3s ease; /* Smooth effect for interactions */
-}
-
-/* Cool Hover Effect: Makes the box pop when you move your mouse over it */
-.box:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-/*end of box styling*/
-/* Responsive rules */
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
@@ -544,7 +545,7 @@ footer {
 }
 
 /* Responsive Overrides: If screen is small, stack everything vertically */
-@media (max-width: 650px) {
+@media (max-width: 500px) {
   .project-card,
   .project-card:nth-child(even) {
     flex-direction: column;
