@@ -49,6 +49,7 @@ h1.page-header{
     
     height:50px;
      background: #080;
+    margin-top: 20px;
      -webkit-border-top-left-radius: 25px;
     -webkit-border-top-right-radius: 25px;
     -moz-border-radius-topleft: 25px;
@@ -262,6 +263,7 @@ One column mobile: We'd like our columns to show up as 100% in a phone so they a
    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  }
  .social-container {
+  padding: 20px;
    display: flex;
    justify-content: space-evenly;
    clear:both;
