@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Positioning</title>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+  </head>
+ <body>
+ <header>
+        <a href="index.html">
+        <img id="logo" src="" alt="logo">   </a>
+     <h1 class="page-header">Positioning</h1>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+           <a href="#" target="_blank">LinkedIn</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>    
+   <main class="wrapper">
+      <section class="projects-container">
+
+                <h2 class="subheader"><strong>My personal portfolio sites of creative works</strong></h2>
+                <p class="subtitle"></p>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2026-06-14 113824.png" alt="Shakespeare bust">
+                    </div>
+                    <div class="project-content">
+                        <h2>A JavaScript data attributes example by Danilo Araujo</h2>
+                        <p><i>This webpage demonstrates how to dynamically style elements using JavaScript to filter a collection of creature images. 
+                            By utilizing custom data attributes in the HTML, each creature is categorized by its type and habitat. 
+                            When a user clicks the interactive buttons, a JavaScript file uses document.querySelectorAll() to grab these specific groups as NodeLists. 
+                            The script then loops through these elements to instantly update their background colors and borders based on the selected category.</i></p>
+                        
+                        <div class="project-links">
+                        <a href="https://danilo0211.github.io/creatures/" class="btn demo-btn" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Danilo0211/creatures" class="btn repo-btn" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2026-06-14 113222.png" alt="Daily Grind Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h2>Daily Grind project in JavaScript</h2>
+                        <p><i>This single-page application displays dynamic, daily rotating content by using the JavaScript Date object to automatically detect
+                           the current day of the week. Based on the active day, conditional logic (like a switch block) automatically updates the page's
+                           color scheme, featured image, all tags, and descriptive text. Additionally, the script utilizes URL query string parameters,
+                           allowing users to override the automatic system clock and manually
+                           cycle through any day's special using interactive navigation links.
+                        </i></p>
+                        
+                        <div class="project-links">
+                            <a href="https://danilo0211.github.io/daily-grind/" class="btn demo-btn" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Danilo0211/daily-grind" class="btn repo-btn" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2026-06-14 112656.png" alt="Future Lab Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h2>Season Stylin' with CSS & JavaScript</h2>
+                        <p><i>This webpage dynamically transforms the user interface for a seasonal retail brand using JavaScript data objects to manage
+                            content across all four seasons. When a user clicks a season button, a script swaps out the page's color scheme, logo image,
+                            featured clothing item, and promotional text to reflect that time of year.The page also features a "Default" reset capability
+                            and includes a brief overview explaining how JavaScript manipulates
+                            the DOM to achieve these real-time style transitions.
+                        </i></p>
+                        
+                        <div class="project-links">
+                            <a href="https://danilo0211.github.io/style-season/" class="btn demo-btn" target="_blank">Live Demo</a>
+                            <a href="https://github.com/Danilo0211/style-season" class="btn repo-btn" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Screenshot 2026-06-14 113611.png" alt="Future Lab Screenshot">
+                    </div>
+                    <div class="project-content">
+                        <h2>PHP server-side application using JavaScript</h2>
+                        <p><i>This web application utilizes asynchronous JavaScript (AJAX/Fetch) to dynamically request and display random quotes from
+                             a server-side PHP backend. The implementation progresses from a manual, click-triggered quote retrieval system to an automated process that fetches new content both on initial
+                             page load and at set timed intervals. To ensure seamless communication between the frontend client and the remote PHP API
+                             across different domains, the server is configured to handle Cross-Origin Resource Sharing (CORS)
+                               permissions.
+                        </i></p>
+                        
+                        <div class="project-links">
+                            <a href="https://danilo0211.github.io/Randon-quote-engine1/" class="btn demo-btn" target="_blank">https://danilo0211.github.io/Randon-quote-engine1/</a>
+                            <a href="https://github.com/Danilo0211/Randon-quote-engine1" class="btn repo-btn" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p><i>Bill's Advice: Take time to explain clearly and perfectly what's going on, 
+                how things work, what you've learned, and try to do so succinctly.  When employers see
+            what we've internalized, they imagine we can act as a valuable resource to them. 
+            We are selling our skills as a resource and asset, and the better job we do articulating this,
+        the more easily an employer can see our value.</i></p>
+        <p><i>It may be MORE important to be able to clearly explain things over actually knowing them!
+            At least if I can explain myself, I'm showing I can adapt in a dynamic manner, and if I know things but 
+            can't explain myself, no one will know what I can do.
+        </i></p>
+            <footer>
+                <p><small>&copy; 2025-<span id="this-year"></span> by 
+                    DANILO ARAUJO, All Rights Reserved ~ 
+                    <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+                    <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+                </p>
+            </footer>
+        </main>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
